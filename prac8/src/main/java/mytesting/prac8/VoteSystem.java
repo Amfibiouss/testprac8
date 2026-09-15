@@ -21,7 +21,9 @@ public class VoteSystem {
 		
 		//закоментированный фрагмент кода до рефакторинга 
 		//if (isValid(info)) {
-		if (info.getAge() < 18 && !info.isVoted()) {
+		
+		if (info.getAge() >= 18 && !info.isVoted()) {
+			userRepository.voted(username);
 			voteProcessor.process_vote(choice);
 		}
 	}
