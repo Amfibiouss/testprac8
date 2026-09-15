@@ -16,7 +16,6 @@ public class AppTest {
 	@Mock
 	private UserRepository userRepository;
 	
-	/*
 	@Test
     public void testApp()
     {
@@ -30,7 +29,6 @@ public class AppTest {
         
         verify(voteProcessor).process_vote("Выбор Васи Пупкина");
     }
-    */
 }
 
 /*
